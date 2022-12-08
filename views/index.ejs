@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    <%= metaTitle %>
+  </title>
+  <script src="js/index.js" defer></script>
+  <link rel="stylesheet" href="css/index.css" />
+</head>
+
+<body>
+  <header>
+    <a class="logo">URL Shortener</a>
+  </header>
+  <main class="main">
+    <div class="short-container">
+      <h1 class="short-title">
+        <%= title %>
+      </h1>
+      <div class="short-input-field">
+        <input id="short-input" type="text" class="short-input">
+        <button id="short-button" class="short-button">Shorten</button>
+      </div>
+
+    </div>
+  </main>
+</body>
+
+</html>
