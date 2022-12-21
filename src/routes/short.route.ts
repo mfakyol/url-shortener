@@ -1,7 +1,9 @@
+import dotenv from "dotenv";
 import express from "express";
 import { nanoid } from "nanoid";
 import bodyParser from "body-parser";
 import ShortenerModel from "../models/shortener.model";
+dotenv.config({ path: process.cwd() + "/.env.local", override: true });
 
 const domain = process.env.DOMAIN || "";
 
