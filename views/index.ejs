@@ -1,33 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= metaTitle %></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <script>
+      var copyButtonText = "<%- copyButtonText %>";
+      var shortLinkText = "<%- shortLinkText %>";
+      var sourceLinkText = "<%- sourceLinkText %>";
+      var linkCopyedSuccesfuly = "<%- linkCopyedSuccesfuly %>";
+    </script>
+    <script src="js/index.js" defer></script>
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>
-    <%= metaTitle %>
-  </title>
-  <script src="js/index.js" defer></script>
-  <link rel="stylesheet" href="css/index.css" />
-</head>
-
-<body>
-  <header>
-    <a class="logo">URL Shortener</a>
-  </header>
-  <main class="main">
-    <div class="short-container">
-      <h1 class="short-title">
-        <%= title %>
-      </h1>
-      <div class="short-input-field">
-        <input id="short-input" type="text" class="short-input">
-        <button id="short-button" class="short-button">Shorten</button>
+  <body>
+    <header class="header">
+      <a class="logo" href="/"><%= urlShortenerText %></a>
+    </header>
+    <main class="main">
+      <div class="url-container">
+        <h1 class="url-title"><%= title %></h1>
+        <div class="url-input-field">
+          <input id="url-input" type="text" class="url-input" placeholder="<%= placeholderText %>" />
+          <button id="url-button" class="url-button">Shorten</button>
+        </div>
+        <span id="error-message" class="error-message"><%= invalidLinkError %></span>
       </div>
 
-    </div>
-  </main>
-</body>
-
+      <div class="history-container">
+        <p class="history-title"><%= history %></p>
+        <ul id="history-list" class="history-list"></ul>
+      </div>
+    </main>
+  </body>
 </html>

@@ -1,0 +1,27 @@
+{
+  "tr": {
+    "metaTitle": "Bağlantı Kısaltıcı",
+    "title": "Kısaltmak için URL'yi yapıştırın",
+    "placeholderText": "Bağlantıyı buraya giriniz..",
+    "invalidLinkError": "Lütfen geçerli bağlantı girin.",
+    "history": "Geçmiş",
+    "copyButtonText": "Panoya kopyala",
+    "shortLinkText": "Kısa Bağlantı",
+    "sourceLinkText": "Kaynak Bağlantısı",
+    "urlShortenerText": "Bağlantı Kısaltıcı",
+    "linkCopyedSuccesfuly": "Bağlantı başarılı bir şekilde panoya kopyalandı."
+  },
+
+  "en": {
+    "metaTitle": "Link Shortener",
+    "title": "Paste the URL to Shorten",
+    "placeholderText": "Enter link here..",
+    "invalidLinkError": "Please enter valid url.",
+    "history": "History",
+    "copyButtonText": "Copy to Clipboard",
+    "shortLinkText": "Short Link",
+    "sourceLinkText": "Source Link",
+    "urlShortenerText": "URL Shortener",
+    "linkCopyedSuccesfuly": "Link copyed to clipboard successfuly"
+  }
+}
